@@ -91,6 +91,10 @@ nav {
     
     position: absolute;
 }
+.room_info .info_text h3 {
+    color: white;
+    margin: 15px 30px;
+}
 /*---------------------------------------------------*/
 .room_control {
     width: 300px;

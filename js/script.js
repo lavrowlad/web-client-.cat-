@@ -23,6 +23,11 @@ $(document).ready(function(){
         "corridor": "close"
     };
     
+    var info_titles = $(".room_info .info_text");
+    for (var i = 0; i < info_titles.length; i++){
+        $(info_titles[i]).append("<h3>" + $($($(info_titles[i]).parent()).parent()).attr("name").toLocaleUpperCase() + "</h3>");
+    }
+    
     // Метод переключения состояния отображения панели 
     // управления комнатами
     // @param _room - название комнаты, статус панели управления
