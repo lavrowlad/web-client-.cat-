@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
 }
-
+/*===================================================*/
+/*===================================================*/
 header {
     width: 100%;
 }
@@ -11,7 +12,8 @@ nav {
     height: 50px;
     background-color: #333;
 }
-
+/*===================================================*/
+/*===================================================*/
 .wrapper {
     width: 100%;
 }
@@ -21,7 +23,7 @@ nav {
     margin: 0 auto;
     padding: 0;
 }
-
+/*===================================================*/
 .rooms_box {
     width: 100%;
     
@@ -34,10 +36,10 @@ nav {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+/*===================================================*/
 .room_item {
     width: 300px;
     height: 200px;
-    border-radius: 10px;
     border: 1px solid #333;
     
     margin-top: 50px;
@@ -53,11 +55,13 @@ nav {
     bottom: 0px;
 }
 /**************************************/
+/*===================================================*/
 .room_image {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 0, 0.6);
 }
+/*---------------------------------------------------*/
 .room_info {
     width: 100%;
     height: 50px;
@@ -72,7 +76,9 @@ nav {
 .room_info .open_control {
     width: 50px;
     height: 50px;
-    background-color: rgba(0, 255, 255, 0.6);
+    
+    background-image: url(../images/open_control.png);
+    
     right: 0;
     cursor: pointer;
     
@@ -85,7 +91,7 @@ nav {
     
     position: absolute;
 }
-
+/*---------------------------------------------------*/
 .room_control {
     width: 300px;
     height: 200px;
@@ -102,15 +108,19 @@ nav {
 }
 .room_control .close_control {
     width: 50px;
-    height: 50px;
     
+    height: 50px;
     position: absolute;
     top: 0;
     right: 0;
     
     cursor: pointer;
     
-    background-color: rgba(0, 255, 255, 0.6);
+    background-image: url(../images/close_control.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
+/*===================================================*/
+/*===================================================*/
 
