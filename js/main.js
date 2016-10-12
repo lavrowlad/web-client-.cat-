@@ -1,32 +1,26 @@
 $(document).ready(function(){
     
-    CreateRoomDOMmodel(room_hallway);
-    CreateRoomDOMmodel(room_livingroom);
-    CreateRoomDOMmodel(room_kitchen);
-    CreateRoomDOMmodel(room_badroom);
-    CreateRoomDOMmodel(room_bathroom);
-    CreateRoomDOMmodel(room_office);
     
-    // Добавление фоновых изображений к блокам комнат.
-    // После будет использовано в построении DOM одели.
-    var images = $(".room_item .room_image");
-    for (var i = 0; i < images.length; i++){
-        var URL = "url(images/rooms/bg_" + $(images[i]).parent().attr("name") + ".jpg)";
-        $(images[i]).css({
-            "background-image": URL,
-            "background-size": "cover"
-        });
+    
+    for (i in rooms){
+        var room_object = new Room(rooms[i]);
+        var room_dom = room_object.DOMelement;
+        $(".rooms_box").append(room_dom);
     }
+    
+    
+    
+    
     // Состояния панелей управления комнатами
     //  - open - паналь открыта
     //  - close - панель скрыта
     var rooms_control_status = {
         "kitchen": "close",
         "bathroom": "close",
-        "badroom": "close",
+        "bedroom": "close",
         "livingroom": "close",
         "office": "close",
-        "hallway": "close"
+        "corridor": "close"
     };
     
     var info_titles = $(".room_info .info_text");
