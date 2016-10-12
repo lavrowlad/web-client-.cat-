@@ -1,4 +1,12 @@
 $(document).ready(function(){
+    
+    CreateRoomDOMmodel(room_hallway);
+    CreateRoomDOMmodel(room_livingroom);
+    CreateRoomDOMmodel(room_kitchen);
+    CreateRoomDOMmodel(room_badroom);
+    CreateRoomDOMmodel(room_bathroom);
+    CreateRoomDOMmodel(room_office);
+    
     // Добавление фоновых изображений к блокам комнат.
     // После будет использовано в построении DOM одели.
     var images = $(".room_item .room_image");
@@ -53,6 +61,7 @@ $(document).ready(function(){
         toggle_control(room_name);
         
         console.log(room_name + "\tis " + rooms_control_status[room_name]);
+        
     });
     // Закрытие панели управления комнотой.
     $(".close_control").on("click", function(){
@@ -60,6 +69,7 @@ $(document).ready(function(){
         toggle_control(room_name);
         
         console.log(room_name + "\tis " + rooms_control_status[room_name]);
+        
     });
     
 });
