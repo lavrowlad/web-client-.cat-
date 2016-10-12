@@ -97,7 +97,7 @@
 //   ключ - название комнаты:
 //     badroom
 //     bathroom
-//     corridor
+//     hallway
 //     kitchen
 //     livingroom
 //     office

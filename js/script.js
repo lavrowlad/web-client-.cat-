@@ -8,19 +8,17 @@ $(document).ready(function(){
             "background-image": URL,
             "background-size": "cover"
         });
-        console.log($(images[i]).parent().attr("name") + ": " + URL);
     }
-    
     // Состояния панелей управления комнатами
-    //  open - паналь открыта
-    //  close - панель скрыта
+    //  - open - паналь открыта
+    //  - close - панель скрыта
     var rooms_control_status = {
         "kitchen": "close",
         "bathroom": "close",
         "badroom": "close",
         "livingroom": "close",
         "office": "close",
-        "corridor": "close"
+        "hallway": "close"
     };
     
     var info_titles = $(".room_info .info_text");
@@ -54,14 +52,14 @@ $(document).ready(function(){
         var room_name = $($(this).parent()).parent().attr("name");
         toggle_control(room_name);
         
-        console.log(room_name + " is " + rooms_control_status[room_name]);
+        console.log(room_name + "\tis " + rooms_control_status[room_name]);
     });
     // Закрытие панели управления комнотой.
     $(".close_control").on("click", function(){
         var room_name = $($(this).parent()).parent().attr("name");
         toggle_control(room_name);
         
-        console.log(room_name + " is " + rooms_control_status[room_name]);
+        console.log(room_name + "\tis " + rooms_control_status[room_name]);
     });
     
 });
