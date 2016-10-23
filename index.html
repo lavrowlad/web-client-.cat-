@@ -9,21 +9,24 @@
     <!-- 
     -- Linked styles, files, icons.
     -->
-    <link rel="stylesheet" href="styles/index.css">
+    <link href="styles/all.css"       rel="stylesheet" >
+    <link href="styles/footer.css"    rel="stylesheet" >
+    <link href="styles/header.css"    rel="stylesheet" >
+    <link href="styles/rooms_box.css" rel="stylesheet" >
+    
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <!-- 
     -- Linked scripst files.
     -->
     <script src="js/jquery.js"></script>
     
-    <script src="js/configs/doors.js"></script>
-    <script src="js/configs/fans.js"></script>
-    <script src="js/configs/lights.js"></script>
-    <script src="js/configs/rooms.js"></script>
+    <script src="js/configs/doors.js"    ></script>
+    <script src="js/configs/fans.js"     ></script>
+    <script src="js/configs/lights.js"   ></script>
+    <script src="js/configs/rooms.js"    ></script>
     <script src="js/configs/sunblinds.js"></script>
-    <script src="js/model/rooms.js"></script>
-    <script src="js/model/controllables.js"></script>
-    <script src="js/model/lights.js"></script>
+    <script src="js/model/rooms.js"      ></script>
+    <script src="js/model/lights.js"     ></script>
     
     
     <script src="js/requester.js"></script>
@@ -36,16 +39,23 @@
 <body>
     <!-- start header -->
     <header>
-        <nav></nav>
+        <!-- stat wrapper -->
+        <div class="wrapper">
+            <!-- start nav -->
+            <nav></nav>
+            <!-- end nav -->
+        </div>
+        <!-- end wrapper -->
     </header>
     <!-- end header -->
-    <!-- start wrapper -->
-    <div class="wrapper">
-        <!-- start main -->
-        <div class="main">
+    <!-- start main -->
+    <div class="main">
+        <!-- start wrapper -->
+        <div class="wrapper">
             <!-- start room box -->
             <div class="rooms_box">
-                <!-- start rooms items
+                <!-- start rooms items -->
+                <!--
                 <div class="room_item" name="room_name" id="room_id">
                     <div class="room_image"></div>
                     <div class="room_info">
@@ -58,13 +68,14 @@
                         <div class="control_body"></div>
                     </div>
                 </div>
-                 end rooms items -->
+                -->
+                <!-- end rooms items -->
             </div>
             <!-- end room box -->
         </div>
-        <!-- end main -->
+        <!-- end wrapper -->
     </div>
-    <!-- end wrapper -->
+    <!-- end main -->
     <!-- start footer -->
     <footer></footer>
     <!-- end footer -->
